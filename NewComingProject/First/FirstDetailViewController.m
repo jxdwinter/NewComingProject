@@ -61,6 +61,26 @@
     [self.leftTableView selectRowAtIndexPath:selectedCellIndexPath animated:YES scrollPosition:UITableViewScrollPositionNone];
 }
 
+- (void) buy:(UIButton *) button {
+    CGPoint pointInTable = [button convertPoint:button.bounds.origin toView:self.rightTableView];
+    NSIndexPath *indexPath = [self.rightTableView indexPathForRowAtPoint:pointInTable];
+    NSDictionary *d = self.rightDataSource[indexPath.row];
+    NSString *name = d[@"name"];
+    FirstDetailRightTableViewCell *cell = [self.rightTableView cellForRowAtIndexPath:indexPath];
+    NSString *number = cell.numberLabel.text;
+    UIAlertController * alert = [UIAlertController
+                                 alertControllerWithTitle:@"下单成功"
+                                 message:[NSString stringWithFormat:@"您购买的%@个%@已成功下单，请耐心等待送达。",number,name]
+                                 preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction* yesButton = [UIAlertAction
+                                actionWithTitle:@"好的"
+                                style:UIAlertActionStyleDefault
+                                handler:^(UIAlertAction * action) {
+                                    //Handle your yes please button action here
+                                }];
+    [alert addAction:yesButton];
+    [self presentViewController:alert animated:YES completion:nil];
+}
 
 #pragma mark - Table view data source
 
@@ -92,6 +112,8 @@
         [attributedString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:20.0]
                                  range:[string rangeOfString:[NSString stringWithFormat:@"%@",self.rightDataSource[indexPath.row][@"price"]]]];
         cell.priceLabel.attributedText = attributedString;
+        [cell.buyButton removeTarget:nil  action:NULL forControlEvents:UIControlEventAllEvents];
+        [cell.buyButton addTarget:self action:@selector(buy:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     }
 }
@@ -166,14 +188,14 @@
 - (NSDictionary *) dataSource {
     return @{
              @"饮料":@[
-                     @{@"name":@"冰红茶",@"price":@"2.50",@"url":@"http://image3.suning.cn/b2c/catentries/000000000128582171_1_200x200.jpg"},
-                     @{@"name":@"绿茶",@"price":@"2.50",@"url":@"http://a2.att.hudong.com/12/07/20200000013920144729073742634_s.jpg"},
-                     @{@"name":@"可乐",@"price":@"2.50",@"url":@"http://static.myhaohao.com/GoodsThumb/2012/11/20/20121120135918_50ab1c368e5c9.jpg"},
+                     @{@"name":@"康师傅冰红茶",@"price":@"2.50",@"url":@"http://image3.suning.cn/b2c/catentries/000000000128582171_1_200x200.jpg"},
+                     @{@"name":@"康师傅绿茶",@"price":@"2.50",@"url":@"http://a2.att.hudong.com/12/07/20200000013920144729073742634_s.jpg"},
+                     @{@"name":@"可口可乐",@"price":@"2.50",@"url":@"http://static.myhaohao.com/GoodsThumb/2012/11/20/20121120135918_50ab1c368e5c9.jpg"},
                      @{@"name":@"雪碧",@"price":@"2.50",@"url":@"http://img02.fn-mart.com/C/item/2013/1028/201310C280002603/_065144988_200x200.jpg"},
                      @{@"name":@"芬达",@"price":@"2.50",@"url":@"http://img01.fn-mart.com/C/item/2013/1028/201310C280002630/0_1_200x200.jpg"},
                      @{@"name":@"美年达",@"price":@"2.50",@"url":@"http://n.chinawutong.com/ThumbImg/s_635012984772877243.jpg"},
                      @{@"name":@"七喜",@"price":@"2.50",@"url":@"http://www.hsboss.com/file/upload/201401/15/1/07-46-07-83-90.jpg.middle.jpg"},
-                     @{@"name":@"茉莉绿茶",@"price":@"2.50",@"url":@"http://thumb.webps.cn/i1/img/4/TB1SgLiHVXXXXXMapXXXXXXXXXX_!!0-item_pic.jpg_200x200.jpg"}
+                     @{@"name":@"康师傅茉莉绿茶",@"price":@"2.50",@"url":@"http://thumb.webps.cn/i1/img/4/TB1SgLiHVXXXXXMapXXXXXXXXXX_!!0-item_pic.jpg_200x200.jpg"}
                      ],
              @"副食":@[
                      @{@"name":@"冰红茶",@"price":@"2.50",@"url":@""},

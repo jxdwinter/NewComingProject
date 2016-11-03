@@ -63,6 +63,31 @@
             make.width.equalTo(@((SCREEN_WIDTH*3/4 - 100.0)/2));
             make.height.equalTo(@25.0);
         }];
+        
+        [self.contentView addSubview:self.plusButton];
+        [self.plusButton mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.priceLabel.mas_bottom).with.offset(10.0);
+            make.right.equalTo(self.buyButton.mas_left).with.offset(-10.0);
+            make.bottom.equalTo(self.contentView.mas_bottom).with.offset(-10.0);
+            make.width.equalTo(@50.0);
+        }];
+        
+        [self.contentView addSubview:self.minusButton];
+        [self.minusButton mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.priceLabel.mas_bottom).with.offset(10.0);
+            make.left.equalTo(self.contentView.mas_left).with.offset(10.0);
+            make.bottom.equalTo(self.contentView.mas_bottom).with.offset(-10.0);
+            make.width.equalTo(@50.0);
+        }];
+        
+        [self.contentView addSubview:self.numberLabel];
+        [self.numberLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.priceLabel.mas_bottom).with.offset(10.0);
+            make.left.equalTo(self.minusButton.mas_right).with.offset(0.0);
+            make.right.equalTo(self.plusButton.mas_left).with.offset(0.0);
+            make.bottom.equalTo(self.contentView.mas_bottom).with.offset(-10.0);
+        }];
+
     }
     return self;
 }
@@ -71,6 +96,55 @@
     [super setSelected:selected animated:animated];
     
     // Configure the view for the selected state
+}
+
+- (UILabel *) numberLabel {
+    if (!_numberLabel) {
+        _numberLabel = [[UILabel alloc] init];
+        _numberLabel.layer.borderColor = DEFAULTCOLOR.CGColor;
+        _numberLabel.layer.borderWidth = 1.0;
+        _numberLabel.layer.cornerRadius = 2.0;
+        _numberLabel.textColor = DEFAULTCOLOR;
+        _numberLabel.font = [UIFont systemFontOfSize:14.0];
+        _numberLabel.text = @"1";
+        _numberLabel.textAlignment = NSTextAlignmentCenter;
+    }
+    return _numberLabel;
+}
+
+- (UIButton *) plusButton {
+    if (!_plusButton) {
+        _plusButton = [[UIButton alloc] initWithFrame:CGRectZero];
+        [_plusButton setTitle:@"+" forState:UIControlStateNormal];
+        [_plusButton setTitleColor:DEFAULTCOLOR forState:UIControlStateNormal];
+        [_plusButton addTarget:self action:@selector(plus) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _plusButton;
+}
+
+- (UIButton *) minusButton {
+    if (!_minusButton) {
+        _minusButton = [[UIButton alloc] initWithFrame:CGRectZero];
+        [_minusButton setTitle:@"-" forState:UIControlStateNormal];
+        [_minusButton setTitleColor:DEFAULTCOLOR forState:UIControlStateNormal];
+        [_minusButton addTarget:self action:@selector(minus) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _minusButton;
+}
+
+- (void) plus {
+    NSUInteger number = [self.numberLabel.text integerValue];
+    number++;
+    self.numberLabel.text = [NSString stringWithFormat:@"%lu",(unsigned long)number];
+}
+
+- (void) minus {
+    NSUInteger number = [self.numberLabel.text integerValue];
+    number--;
+    if (number < 1) {
+        number = 1;
+    }
+    self.numberLabel.text = [NSString stringWithFormat:@"%lu",(unsigned long)number];
 }
 
 @end

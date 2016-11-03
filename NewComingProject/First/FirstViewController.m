@@ -34,7 +34,7 @@
 }
 
 - (void)configController{
-    WMPageController *pageViewController = [[WMPageController alloc] init ];
+    WMPageController *pageViewController = [[WMPageController alloc] init];
     pageViewController.dataSource = self;
     pageViewController.menuViewStyle = WMMenuViewStyleLine;
     pageViewController.pageAnimatable = YES;
@@ -48,7 +48,7 @@
     [self addChildViewController:pageViewController];
     [self.view addSubview:pageViewController.view];
     
-    UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0.0, MENUHEIGHT, SCREEN_WIDTH, 1.0)];
+    UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0.0, MENUHEIGHT + NAVIGATIONBARHEIGHT, SCREEN_WIDTH, 1.0)];
     lineView.backgroundColor = [UIColor colorWithRed:0.95 green:0.95 blue:0.95 alpha:1];
     [self.view addSubview:lineView];
 }

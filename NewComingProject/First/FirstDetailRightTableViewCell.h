@@ -17,5 +17,8 @@
 @property (nonatomic, strong) TTTAttributedLabel *productNameLabel;
 @property (nonatomic, strong) UILabel *priceLabel;
 @property (nonatomic, strong) UIButton *buyButton;
+@property (nonatomic, strong) UILabel *numberLabel;
+@property (nonatomic, strong) UIButton *plusButton;
+@property (nonatomic, strong) UIButton *minusButton;
 
 @end
