@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83322C691DCADF08006ED7E9 /* FirstDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83322C631DCADF08006ED7E9 /* FirstDetailViewController.m */; };
+		83322C6A1DCADF08006ED7E9 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83322C651DCADF08006ED7E9 /* FirstViewController.m */; };
+		83322C6B1DCADF08006ED7E9 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83322C681DCADF08006ED7E9 /* SecondViewController.m */; };
+		83322C6E1DCADF34006ED7E9 /* FirstDetailLeftTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83322C6D1DCADF34006ED7E9 /* FirstDetailLeftTableViewCell.m */; };
+		83322C711DCADF4E006ED7E9 /* FirstDetailRightTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83322C701DCADF4E006ED7E9 /* FirstDetailRightTableViewCell.m */; };
 		83CEB4451DCAC6F70063D49F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CEB4441DCAC6F70063D49F /* main.m */; };
 		83CEB4481DCAC6F70063D49F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CEB4471DCAC6F70063D49F /* AppDelegate.m */; };
-		83CEB44B1DCAC6F70063D49F /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CEB44A1DCAC6F70063D49F /* FirstViewController.m */; };
-		83CEB44E1DCAC6F70063D49F /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CEB44D1DCAC6F70063D49F /* SecondViewController.m */; };
 		83CEB4511DCAC6F70063D49F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CEB44F1DCAC6F70063D49F /* Main.storyboard */; };
 		83CEB4531DCAC6F70063D49F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83CEB4521DCAC6F70063D49F /* Assets.xcassets */; };
 		83CEB4561DCAC6F70063D49F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CEB4541DCAC6F70063D49F /* LaunchScreen.storyboard */; };
@@ -21,14 +24,21 @@
 		13AB0221886AA93AF9DF0CC5 /* libPods-NewComingProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewComingProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18CFD65D7BAE21ABC3B97C0A /* Pods-NewComingProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewComingProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewComingProject/Pods-NewComingProject.release.xcconfig"; sourceTree = "<group>"; };
 		7AC70FB14AC9ADDA811D9C05 /* Pods-NewComingProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewComingProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewComingProject/Pods-NewComingProject.debug.xcconfig"; sourceTree = "<group>"; };
+		83322C621DCADF08006ED7E9 /* FirstDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstDetailViewController.h; sourceTree = "<group>"; };
+		83322C631DCADF08006ED7E9 /* FirstDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstDetailViewController.m; sourceTree = "<group>"; };
+		83322C641DCADF08006ED7E9 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		83322C651DCADF08006ED7E9 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		83322C671DCADF08006ED7E9 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		83322C681DCADF08006ED7E9 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		83322C6C1DCADF34006ED7E9 /* FirstDetailLeftTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstDetailLeftTableViewCell.h; sourceTree = "<group>"; };
+		83322C6D1DCADF34006ED7E9 /* FirstDetailLeftTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstDetailLeftTableViewCell.m; sourceTree = "<group>"; };
+		83322C6F1DCADF4E006ED7E9 /* FirstDetailRightTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstDetailRightTableViewCell.h; sourceTree = "<group>"; };
+		83322C701DCADF4E006ED7E9 /* FirstDetailRightTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstDetailRightTableViewCell.m; sourceTree = "<group>"; };
+		83322C731DCAE0B2006ED7E9 /* UIConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIConfig.h; sourceTree = "<group>"; };
 		83CEB4401DCAC6F70063D49F /* NewComingProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewComingProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83CEB4441DCAC6F70063D49F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		83CEB4461DCAC6F70063D49F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		83CEB4471DCAC6F70063D49F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		83CEB4491DCAC6F70063D49F /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		83CEB44A1DCAC6F70063D49F /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		83CEB44C1DCAC6F70063D49F /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		83CEB44D1DCAC6F70063D49F /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		83CEB4501DCAC6F70063D49F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83CEB4521DCAC6F70063D49F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83CEB4551DCAC6F70063D49F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +57,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83322C611DCADF08006ED7E9 /* First */ = {
+			isa = PBXGroup;
+			children = (
+				83322C641DCADF08006ED7E9 /* FirstViewController.h */,
+				83322C651DCADF08006ED7E9 /* FirstViewController.m */,
+				83322C621DCADF08006ED7E9 /* FirstDetailViewController.h */,
+				83322C631DCADF08006ED7E9 /* FirstDetailViewController.m */,
+				83322C6C1DCADF34006ED7E9 /* FirstDetailLeftTableViewCell.h */,
+				83322C6D1DCADF34006ED7E9 /* FirstDetailLeftTableViewCell.m */,
+				83322C6F1DCADF4E006ED7E9 /* FirstDetailRightTableViewCell.h */,
+				83322C701DCADF4E006ED7E9 /* FirstDetailRightTableViewCell.m */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		83322C661DCADF08006ED7E9 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				83322C671DCADF08006ED7E9 /* SecondViewController.h */,
+				83322C681DCADF08006ED7E9 /* SecondViewController.m */,
+			);
+			path = Second;
+			sourceTree = "<group>";
+		};
 		83CEB4371DCAC6F70063D49F = {
 			isa = PBXGroup;
 			children = (
@@ -68,16 +102,15 @@
 		83CEB4421DCAC6F70063D49F /* NewComingProject */ = {
 			isa = PBXGroup;
 			children = (
+				83322C611DCADF08006ED7E9 /* First */,
+				83322C661DCADF08006ED7E9 /* Second */,
 				83CEB4461DCAC6F70063D49F /* AppDelegate.h */,
 				83CEB4471DCAC6F70063D49F /* AppDelegate.m */,
-				83CEB4491DCAC6F70063D49F /* FirstViewController.h */,
-				83CEB44A1DCAC6F70063D49F /* FirstViewController.m */,
-				83CEB44C1DCAC6F70063D49F /* SecondViewController.h */,
-				83CEB44D1DCAC6F70063D49F /* SecondViewController.m */,
 				83CEB44F1DCAC6F70063D49F /* Main.storyboard */,
 				83CEB4521DCAC6F70063D49F /* Assets.xcassets */,
 				83CEB4541DCAC6F70063D49F /* LaunchScreen.storyboard */,
 				83CEB4571DCAC6F70063D49F /* Info.plist */,
+				83322C731DCAE0B2006ED7E9 /* UIConfig.h */,
 				83CEB4431DCAC6F70063D49F /* Supporting Files */,
 			);
 			path = NewComingProject;
@@ -230,10 +263,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83CEB44E1DCAC6F70063D49F /* SecondViewController.m in Sources */,
+				83322C6E1DCADF34006ED7E9 /* FirstDetailLeftTableViewCell.m in Sources */,
+				83322C6B1DCADF08006ED7E9 /* SecondViewController.m in Sources */,
 				83CEB4481DCAC6F70063D49F /* AppDelegate.m in Sources */,
-				83CEB44B1DCAC6F70063D49F /* FirstViewController.m in Sources */,
+				83322C691DCADF08006ED7E9 /* FirstDetailViewController.m in Sources */,
 				83CEB4451DCAC6F70063D49F /* main.m in Sources */,
+				83322C711DCADF4E006ED7E9 /* FirstDetailRightTableViewCell.m in Sources */,
+				83322C6A1DCADF08006ED7E9 /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +313,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -324,6 +361,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
