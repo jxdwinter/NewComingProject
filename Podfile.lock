@@ -1,4 +1,5 @@
 PODS:
+  - BaiduMapKit (3.1.0)
   - DZNEmptyDataSet (1.8.1)
   - IQKeyboardManager (4.0.7)
   - Masonry (1.0.2)
@@ -13,6 +14,7 @@ PODS:
   - YYModel (1.0.4)
 
 DEPENDENCIES:
+  - BaiduMapKit
   - DZNEmptyDataSet
   - IQKeyboardManager
   - Masonry
@@ -25,6 +27,7 @@ DEPENDENCIES:
   - YYModel
 
 SPEC CHECKSUMS:
+  BaiduMapKit: 4cfaedb118cff7e157e9771859a4bf65a261b2a1
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   IQKeyboardManager: 69002bb4fea60596b710e57d426abc00e5063630
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
@@ -36,6 +39,6 @@ SPEC CHECKSUMS:
   WMPageController: 2267f3b40620eb0a74abb19ee2a46ce1d7c61754
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 20a02a0c0f787cedc7606e86109afcdaa2111bd2
+PODFILE CHECKSUM: 02edc7d523d351b4d76fca304617be4bb8a07621
 
 COCOAPODS: 1.0.1

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		831FEB4A1DD41ADB00EBA40C /* SecondTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 831FEB491DD41ADB00EBA40C /* SecondTabbarViewController.m */; };
+		831FEB4D1DD41EAC00EBA40C /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 831FEB4C1DD41EAC00EBA40C /* OneViewController.m */; };
+		831FEB501DD41EB600EBA40C /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 831FEB4F1DD41EB600EBA40C /* TwoViewController.m */; };
+		831FEB531DD4226900EBA40C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 831FEB521DD4226900EBA40C /* DetailViewController.m */; };
 		83322C691DCADF08006ED7E9 /* FirstDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83322C631DCADF08006ED7E9 /* FirstDetailViewController.m */; };
 		83322C6A1DCADF08006ED7E9 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83322C651DCADF08006ED7E9 /* FirstViewController.m */; };
 		83322C6B1DCADF08006ED7E9 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83322C681DCADF08006ED7E9 /* SecondViewController.m */; };
@@ -17,6 +21,7 @@
 		83CEB4511DCAC6F70063D49F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CEB44F1DCAC6F70063D49F /* Main.storyboard */; };
 		83CEB4531DCAC6F70063D49F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83CEB4521DCAC6F70063D49F /* Assets.xcassets */; };
 		83CEB4561DCAC6F70063D49F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CEB4541DCAC6F70063D49F /* LaunchScreen.storyboard */; };
+		83FCB0361DD4425B003A6BE4 /* DetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83FCB0351DD4425B003A6BE4 /* DetailTableViewCell.m */; };
 		D6C388EB6A2F891B6F566D05 /* libPods-NewComingProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13AB0221886AA93AF9DF0CC5 /* libPods-NewComingProject.a */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +29,14 @@
 		13AB0221886AA93AF9DF0CC5 /* libPods-NewComingProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewComingProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18CFD65D7BAE21ABC3B97C0A /* Pods-NewComingProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewComingProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewComingProject/Pods-NewComingProject.release.xcconfig"; sourceTree = "<group>"; };
 		7AC70FB14AC9ADDA811D9C05 /* Pods-NewComingProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewComingProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewComingProject/Pods-NewComingProject.debug.xcconfig"; sourceTree = "<group>"; };
+		831FEB481DD41ADB00EBA40C /* SecondTabbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondTabbarViewController.h; sourceTree = "<group>"; };
+		831FEB491DD41ADB00EBA40C /* SecondTabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondTabbarViewController.m; sourceTree = "<group>"; };
+		831FEB4B1DD41EAC00EBA40C /* OneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
+		831FEB4C1DD41EAC00EBA40C /* OneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
+		831FEB4E1DD41EB600EBA40C /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
+		831FEB4F1DD41EB600EBA40C /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
+		831FEB511DD4226900EBA40C /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		831FEB521DD4226900EBA40C /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		83322C621DCADF08006ED7E9 /* FirstDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstDetailViewController.h; sourceTree = "<group>"; };
 		83322C631DCADF08006ED7E9 /* FirstDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstDetailViewController.m; sourceTree = "<group>"; };
 		83322C641DCADF08006ED7E9 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
@@ -43,6 +56,8 @@
 		83CEB4521DCAC6F70063D49F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83CEB4551DCAC6F70063D49F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83CEB4571DCAC6F70063D49F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83FCB0341DD4425B003A6BE4 /* DetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableViewCell.h; sourceTree = "<group>"; };
+		83FCB0351DD4425B003A6BE4 /* DetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +92,16 @@
 			children = (
 				83322C671DCADF08006ED7E9 /* SecondViewController.h */,
 				83322C681DCADF08006ED7E9 /* SecondViewController.m */,
+				831FEB481DD41ADB00EBA40C /* SecondTabbarViewController.h */,
+				831FEB491DD41ADB00EBA40C /* SecondTabbarViewController.m */,
+				831FEB4B1DD41EAC00EBA40C /* OneViewController.h */,
+				831FEB4C1DD41EAC00EBA40C /* OneViewController.m */,
+				831FEB4E1DD41EB600EBA40C /* TwoViewController.h */,
+				831FEB4F1DD41EB600EBA40C /* TwoViewController.m */,
+				831FEB511DD4226900EBA40C /* DetailViewController.h */,
+				831FEB521DD4226900EBA40C /* DetailViewController.m */,
+				83FCB0341DD4425B003A6BE4 /* DetailTableViewCell.h */,
+				83FCB0351DD4425B003A6BE4 /* DetailTableViewCell.m */,
 			);
 			path = Second;
 			sourceTree = "<group>";
@@ -175,6 +200,7 @@
 				TargetAttributes = {
 					83CEB43F1DCAC6F70063D49F = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 5DA93NWP5K;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -266,9 +292,14 @@
 				83322C6E1DCADF34006ED7E9 /* FirstDetailLeftTableViewCell.m in Sources */,
 				83322C6B1DCADF08006ED7E9 /* SecondViewController.m in Sources */,
 				83CEB4481DCAC6F70063D49F /* AppDelegate.m in Sources */,
+				831FEB501DD41EB600EBA40C /* TwoViewController.m in Sources */,
+				831FEB4D1DD41EAC00EBA40C /* OneViewController.m in Sources */,
 				83322C691DCADF08006ED7E9 /* FirstDetailViewController.m in Sources */,
+				83FCB0361DD4425B003A6BE4 /* DetailTableViewCell.m in Sources */,
 				83CEB4451DCAC6F70063D49F /* main.m in Sources */,
+				831FEB531DD4226900EBA40C /* DetailViewController.m in Sources */,
 				83322C711DCADF4E006ED7E9 /* FirstDetailRightTableViewCell.m in Sources */,
+				831FEB4A1DD41ADB00EBA40C /* SecondTabbarViewController.m in Sources */,
 				83322C6A1DCADF08006ED7E9 /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,6 +421,7 @@
 			baseConfigurationReference = 7AC70FB14AC9ADDA811D9C05 /* Pods-NewComingProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5DA93NWP5K;
 				INFOPLIST_FILE = NewComingProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -403,6 +435,7 @@
 			baseConfigurationReference = 18CFD65D7BAE21ABC3B97C0A /* Pods-NewComingProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5DA93NWP5K;
 				INFOPLIST_FILE = NewComingProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

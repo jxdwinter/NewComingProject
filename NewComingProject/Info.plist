@@ -42,10 +42,12 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
-    <key>NSAppTransportSecurity</key>
-    <dict>
-        <key>NSAllowsArbitraryLoads</key>
-        <true/>
-    </dict>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>App需要您的同意,才能在使用期间访问位置</string>
 </dict>
 </plist>

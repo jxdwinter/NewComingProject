@@ -15,4 +15,5 @@ target "NewComingProject" do
 	pod 'YYModel'
 	pod 'DZNEmptyDataSet'
 	pod 'IQKeyboardManager'
+	pod 'BaiduMapKit' #百度地图SDK
 end
